@@ -15,7 +15,8 @@ This project is an E-Commerce website built using Node.js for server-side script
 
 #Installation
 > Clone the repository to your local machine:
-    git clone https://github.com/your-username/your-project.git
+   
+    git clone https://github.com/codewithrajan/xenonfirst.git
 
 > Navigate to the project directory:
     cd your-project
@@ -25,7 +26,7 @@ This project is an E-Commerce website built using Node.js for server-side script
 
 #Usage
 To run the application, use the following command:
-    bashnpm start
+    nodemon app.js
 Access the application in your web browser at http://localhost:3000.
 
 #Features
