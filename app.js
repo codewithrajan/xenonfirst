@@ -8,7 +8,7 @@ const { Contact } = require('./models/Contact');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect(process.env.DATABASE_URL || 'mongodb://localhost/your-app-name');
+mongoose.connect(process.env.DATABASE_URL)
 // Connect to MongoDB
 
 // Middleware
