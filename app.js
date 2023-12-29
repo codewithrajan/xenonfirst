@@ -9,8 +9,8 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://rajan:fddGgOBLH8BCfLgJ@cluster0.d8girz9.mongodb.net/studentcrudmm?retryWrites=true&w=majority');
- 
+// mongoose.connect('mongodb+srv://rajan:fddGgOBLH8BCfLgJ@cluster0.d8girz9.mongodb.net/studentcrudmm?retryWrites=true&w=majority');
+mongoose.connect(process.env.DATABASE_URL || 'mongodb://localhost/your-app-name');
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
