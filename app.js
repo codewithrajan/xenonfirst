@@ -8,8 +8,8 @@ const { Contact } = require('./models/Contact');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect(process.env.DATABASE_URL)
 // Connect to MongoDB
+mongoose.connect(process.env.DATABASE_URL);
 
 // Middleware
 app.use(express.urlencoded({ extended: true }));
@@ -82,10 +82,6 @@ app.get('/register', (req, res) => {
 
 app.post('/register', async (req, res) => {
   const { username, password, confirmPassword } = req.body;
-  // console.log(req.body);
-  // console.log(req.body.password)
-  // console.log(req.body.confirmPassword)
-
   try {
     if (password != confirmPassword) {
       req.flash('error', 'Passwords do not match. Please try again.');
@@ -109,9 +105,6 @@ app.post('/register', async (req, res) => {
     res.status(500).send('Internal Server Error');
   }
 });
-
-// ...
-
 
 // Start server
 
