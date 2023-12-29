@@ -30,17 +30,19 @@
 
                 <ul id="MenuItems">
                    {{#if user}}
-                    <li><a href="/contact">Contact</a></li> 
-                    <li><a href="/login">Login</a></li>
-                    <li><a href="/register">SignUp</a></li>
-                   {{else}}
                     
                     <li><a href="/index">Home</a></li>
                     <li><a href="/logout">Logout</a></li> 
+                    
+                   {{else}}
+                   <li><a href="/contact">Contact</a></li> 
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">SignUp</a></li>
+                   
                                {{/if}}
 
                 </ul>
-                <img src="image/menu.png" class="menu-icon" onclick="menutoggle()">
+                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
         </div>
     </div>
     <!-------------------------ACCOUNT PAGE------------------------------------>
